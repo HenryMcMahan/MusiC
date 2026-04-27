@@ -15,5 +15,7 @@ typedef struct Artist {
 Artist* create_artist(int id, const char* name);
 void add_artist_to_list(Artist** head, Artist* new_artist);
 void save_artists_to_file(Artist* head, const char* filename);
+Artist* find_artist_by_id(Artist* head, int id);
+void free_artist_list(Artist* head);
 
 #endif

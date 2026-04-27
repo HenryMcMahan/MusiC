@@ -38,4 +38,7 @@ void link_song_to_artist(Song* song, struct Artist* artist);
 // prints all the songs for a given rating
 void print_songs_by_rating(Song* head, int target_rating);
 
+// updates the file path for a song
+void update_song_path(Song* song, const char* new_path);
+
 #endif

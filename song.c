@@ -105,3 +105,11 @@ void print_songs_by_rating(Song* head, int target_rating) {
     }
     printf("---------------------------\n");
 }
+
+// updates the file path for a song
+void update_song_path(Song* song, const char* new_path) {
+    if (song != NULL && new_path != NULL) {
+        strncpy(song->filepath, new_path, 255);
+        song->filepath[255] = '\0'; // Ensure null-termination
+    }
+}

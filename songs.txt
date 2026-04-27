@@ -1,0 +1,6 @@
+1,Major Crimes,213,9,fake path,1
+2,ORDINARY LOSS,233,10,fake path 2,1
+3,DON'T TRY,314,0,fake path 03,1
+4,Loving Is Easy,343,0,C:/Users/Henry/Music/Flac Downloads/DDS/death's dynamic shroud - I'll Try Living Like This/death's dynamic shroud - I'll Try Living Like This - 02 Loving Is Easy.flac,2
+5,PoPiPo,181,0,C:/Users/Henry/Music/Hatsune Miku/ PoPiPoTBG.mp3,3
+6,Release Me,273,8,Music_Files\death's dynamic shroud.wmv - Dream is Over - 01 Release Me.wav,2

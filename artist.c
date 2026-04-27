@@ -43,3 +43,34 @@ void save_artists_to_file(Artist* head, const char* filename) {
 
     fclose(file);
 }
+
+// Finds an artist by the id
+Artist* find_artist_by_id(Artist* head, int id) {
+    Artist* current = head;
+    while (current != NULL) {
+        if (current->id == id) {
+            return current;
+        }
+        current = current->next;
+    }
+    return NULL; // Not found
+}
+
+void free_artist_list(Artist* head) {
+    Artist* current = head;
+    Artist* next_node;
+
+    while (current != NULL) {
+        // 1. Store the next pointer BEFORE freeing the current node
+        next_node = current->next;
+
+        // 2. Free the current artist node
+        // free dynamic memory here if added
+        free(current);
+
+        // 3. Move to the next artist in the list
+        current = next_node;
+    }
+    
+    printf("Artist database memory has been cleared.\n");
+}
