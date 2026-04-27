@@ -124,3 +124,6 @@ Users manually add or upload songs to the system. If the proper audio files are 
 - Interface: Command Line (Terminal)  
 - Storage: Local text files  
 - Version Control: Git  
+
+## For Compiling
+gcc -o main main.c profile.c song.c artist.c storage.c playback.c cli.c -lwinmm -lm
